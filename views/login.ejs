@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/myCSS.css">
+</head>
+<body>
+    <h1>Login</h1>
+    <% if (messages.error) { %>
+        <%= messages.error %>
+        <% } %>
+    <form action="/login" method="POST">
+        <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password" required>
+        </div>
+        <section>
+            <button type="submit">Login</button>
+        </section>
+        <a href="/register">Create Login</a>
+    </form>
+</body>
+</html>

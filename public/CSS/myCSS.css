@@ -1,0 +1,24 @@
+label { 
+    display: table-cell; 
+}
+body {
+    text-align: center;
+}
+form {
+    display: inline-block;
+}
+table, td{
+    border: 1px solid black;
+}
+.tac{
+    background-color: coral;
+    color:azure;
+    text-align:center;
+    border: 1px solid coral;
+    height: 10vh;
+    width: 20vw;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 80px;
+    float: inline-end;
+}
